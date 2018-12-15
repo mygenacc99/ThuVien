@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="783.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.Category.CategoryManagerController">
+    <children>
+        <Label layoutX="356.0" layoutY="14.0" prefHeight="59.0" prefWidth="396.0" text="THỂ LOẠI SÁCH" textAlignment="CENTER" underline="true" AnchorPane.leftAnchor="356.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font size="49.0" />
+            </font>
+        </Label>
+        <TableView fx:id="categoryTable" layoutX="57.0" layoutY="84.0" prefHeight="616.0" prefWidth="993.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="205.0" text="Mã" />
+                <TableColumn fx:id="nameColumn" minWidth="3.0" prefWidth="396.0" text="Tên" />
+                <TableColumn fx:id="noteColumn" prefWidth="391.0" text="Ghi chú" />
+            </columns>
+        </TableView>
+        <Button layoutX="730.0" layoutY="717.0" mnemonicParsing="false" onAction="#handleNewCategory" text="Thêm">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button layoutX="858.0" layoutY="717.0" mnemonicParsing="false" onAction="#handleEditCategory" text="Sửa">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button layoutX="974.0" layoutY="717.0" mnemonicParsing="false" onAction="#handleDelCategory" text="Xóa">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Label fx:id="lbAmount" layoutX="57.0" layoutY="717.0">
+            <font>
+                <Font name="System Italic" size="21.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

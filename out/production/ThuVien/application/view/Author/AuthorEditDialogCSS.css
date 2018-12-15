@@ -1,0 +1,7 @@
+.date-picker {
+    -fx-font: 18px "Arial";
+}
+
+.date-picker.text-field {
+    -fx-font: 30px "Arial";
+}

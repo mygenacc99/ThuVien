@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="646.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.Author.AuthorEditDialogController">
+   <children>
+      <Label layoutX="261.0" layoutY="14.0" text="TÁC GIẢ" underline="true">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="122.0" layoutY="75.0" prefHeight="410.0" prefWidth="580.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="100.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="283.0" minWidth="10.0" prefWidth="201.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.0" minWidth="10.0" prefWidth="379.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Mã độc giả:">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label text="Họ tên:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label text="Ngày sinh:" GridPane.rowIndex="2">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label text="Quốc tịch:" GridPane.rowIndex="3">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label text="Ghi chú:" GridPane.rowIndex="4">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtfID" GridPane.columnIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtfName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="dpBirth" prefHeight="91.0" prefWidth="359.0" stylesheets="@AuthorEditDialogCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtfNation" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtfNote" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button layoutX="142.0" layoutY="557.0" mnemonicParsing="false" onAction="#handleOK" text="OK">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="325.0" layoutY="557.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
