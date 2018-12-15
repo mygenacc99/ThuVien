@@ -1,14 +1,3 @@
 # ThuVien
-_------------------------------------------------___-----____
-HHHHHHHH      HHHHHHHH  EEEEEEEEEEE
-  HH             HH         II
-  HH             HH	    II
-  HH             HH	    II
-  HH             HH	    II
-  HH             HH	    II
-  HHHHHHHHHHHHHHHHH         II
-  HH             HH	    II
-  HH             HH	    II
-  HH             HH	    II
-  HH             HH	    II
-HHHHHHHH      HHHHHHHH  EEEEEEEEEEE
+- Hi. This is my exercise: Create application to manager the library. 
+My English not good.
